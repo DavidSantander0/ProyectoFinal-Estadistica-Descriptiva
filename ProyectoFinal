@@ -1,0 +1,126 @@
+#Cargar datos desde un archivo CSV
+data <- read.csv("C:\\Users\\Administrativo\\Documents\\rstudio\\WA_Fn-UseC_-HR-Employee-Attrition.csv")
+print(data)
+
+#Extraer la columna 'Age' de los datos
+x <- data$Age
+print(x)
+print(length(x))
+
+#Función para mostrar un vector de datos
+mostrarVectorDatos <- function(vector){
+  print(vector)    
+}
+
+#Función para crear una tabla de frecuencias
+tablaFrecuencia <- function(vector){
+  listax <- hist(vector, plot = FALSE)
+  tf <- table.freq(listax)
+  View(tf)
+}
+
+# Función para mostrar el tamaño de la muestra
+muestra <- function(vector){
+  n <- length(vector)
+  paste("El tamaño de mi muestra es: ", n)
+}
+
+# Función para crear un histograma
+histograma <- function(vector){
+  return(hist(vector, main = "Titulo"))
+}
+
+# Función para crear un polígono de frecuencia
+poligonoFrecuencia <- function(histograma){
+  polygon.freq(histograma, lwd = 2)  
+}
+
+# Función para crear un diagrama de pastel
+diagramaPastel <- function(vector){
+  pie(vector)  
+}
+
+# Función para calcular la media
+media <- function(vector){
+  return(mean(vector))
+}
+
+# Función para calcular la mediana
+mediana <- function(vector){
+  x <- sort(vector)
+  return(median(x))
+}
+
+# Función para calcular la moda
+moda <- function(vector){
+  return(as.numeric(names(which.max(table(x)))))
+}
+
+# Función para calcular el rango
+Rg <- function(x){
+  rang <- max(x) - min(x)
+  paste("El rango es: ", rang)
+}
+
+# Función para calcular la varianza
+varianza <- function(vector){
+  return(var(vector, na.rm=FALSE))
+}
+
+# Función para calcular la desviación estándar
+desviacionEstandar <- function(vector){
+  return(sd(vector))
+}
+
+# Función para calcular los cuartiles
+cuartiles <- function(vector){
+  q <- quantile(vector, probs = c(0.25,0.50,0.75))
+  return(q)
+}
+
+# Función para calcular los deciles
+deciles <- function(vector){
+  d <- quantile(vector, probs = seq(0.1,0.9, by = 0.1))
+  return(d)
+}
+
+# Función para calcular los percentiles
+percentiles <- function(vector){
+  p <- quantile(vector, probs = seq(0.01, 0.99,  by = 0.01))
+  return(p)
+}
+
+# Función para crear un diagrama de caja
+diagramaCaja <- function(vector){
+  boxplot(vector, col = "green", 
+          horizontal=TRUE)
+}
+
+# Asignar nombres a las categorías
+names(x) <- c("A", "B", "C", "D", "E", "F", "G", "H", "I", "J")
+
+# Crear un gráfico de Pareto
+pareto.chart(
+  x[1:10], ylab = "Frecuencias", 
+  col = heat.colors(length(x)),
+  cumperc = seq(0, 100, by = 20),
+  ylab2 = "Porcentaje acumulado",
+  main = "Comentarios")
+
+# Llamar a las funciones definidas
+mostrarVectorDatos(x)
+tablaFrecuencia(x) 
+muestra(x)
+hist <- histograma(x)
+poligonoFrecuencia(hist)
+diagramaPastel(x)
+paste("La media es: ", media(x))
+paste("La varianza es: ", varianza(x))
+paste("El rango es: " , Rg(x))
+paste("La mediana es: ", mediana(x))
+paste("La moda es: ", moda(x))
+paste("La desviación estándar es: ", desviacionEstandar(x))
+cuartiles(x)
+deciles(x)
+percentiles(x)
+diagramaCaja(x)
