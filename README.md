@@ -1,7 +1,14 @@
 ![Imagen](https://itq.edu.ec/wp-content/uploads/2023/02/Recurso-6.png)
 
+Estudiantes: 
+DAVID SANTANDER 
+JOSUE SALAZAR 
+NIXON CARCELEN
+
+
 
 INFORME DE ANALISIS DE DATOS. 
+
 
 1. Introducción:
 Este informe se enfoca en llevar a cabo un análisis exploratorio de datos en el ámbito de recursos humanos, específicamente utilizando un conjunto de datos que contiene información sobre empleados. El propósito principal es obtener una comprensión inicial de cómo se distribuyen las edades dentro de la organización, con la intención de extraer información clave para la toma de decisiones empresariales.
