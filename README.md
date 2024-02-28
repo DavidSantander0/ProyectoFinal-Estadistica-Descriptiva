@@ -21,6 +21,7 @@ Funciones Estadísticas y Gráficas:
 Se han desarrollado funciones en R para calcular medidas estadísticas como media, mediana, moda, varianza, desviación estándar, y para generar gráficos como histogramas, polígonos de frecuencia, diagramas de caja y diagramas de pastel.
 
 VERSION UTILIZADA DE Rstudio: Version: 2023.12.1+402
+
 LIBRERIAS UTILIZADAS EN EL PRESENTE PROYECTO: Agricolae, gtools, qcc, raster.
 
 Análisis de Resultados:
