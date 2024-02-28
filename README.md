@@ -1,2 +1,2 @@
 # ProyectoFinal-Estadistica-Descriptiva
-A continuacion nuestro proyecto final
+El proyecto consiste en realizar un análisis exploratorio de datos sobre un conjunto de datos de recursos humanos, con especial atención a la variable 'Age' (edad) de los empleados. Se han implementado funciones en R para realizar diversas tareas, como mostrar el vector de datos, crear tablas de frecuencia, calcular medidas estadísticas (media, mediana, moda, varianza, etc.), generar gráficos (histogramas, polígonos de frecuencia, diagramas de caja, diagramas de pastel, Pareto), y proporcionar información descriptiva sobre la distribución de edades en el conjunto de datos.
