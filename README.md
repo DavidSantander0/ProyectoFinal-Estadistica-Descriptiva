@@ -1,5 +1,6 @@
 ![Imagen](https://itq.edu.ec/wp-content/uploads/2023/02/Recurso-6.png)
 
+
 INFORME DE ANALISIS DE DATOS. 
 
 1. Introducción:
@@ -18,6 +19,9 @@ Se destaca y aísla la variable 'Age' para un análisis detallado. Esta variable
 
 Funciones Estadísticas y Gráficas:
 Se han desarrollado funciones en R para calcular medidas estadísticas como media, mediana, moda, varianza, desviación estándar, y para generar gráficos como histogramas, polígonos de frecuencia, diagramas de caja y diagramas de pastel.
+
+VERSION UTILIZADA DE Rstudio: Version: 2023.12.1+402
+LIBRERIAS UTILIZADAS EN EL PRESENTE PROYECTO: Agricolae, gtools, qcc, raster.
 
 Análisis de Resultados:
 Se realiza una interpretación de los resultados estadísticos y gráficos en relación con la variable 'Age'. Esto incluye la identificación de tendencias, dispersión, valores centrales y cualquier patrón observado.
