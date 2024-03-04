@@ -24,6 +24,9 @@ Se inicia la exploración cargando los datos desde un archivo CSV, que probablem
 Análisis de la Edad:
 Se destaca y aísla la variable 'Age' para un análisis detallado. Esta variable es esencial ya que la edad puede estar vinculada a diversas métricas clave en el ámbito de recursos humanos.
 
+Analisis de la distancia:
+Se destaca y aísla la variable 'DistanceFromHome' para un análisis detallado. Esta variable es esencial ya que la distancia puede estar vinculada a diversas métricas clave en el ámbito de recursos humanos.
+
 Funciones Estadísticas y Gráficas:
 Se han desarrollado funciones en R para calcular medidas estadísticas como media, mediana, moda, varianza, desviación estándar, y para generar gráficos como histogramas, polígonos de frecuencia, diagramas de caja y diagramas de pastel.
 
